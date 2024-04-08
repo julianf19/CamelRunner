@@ -13,12 +13,15 @@
 
 ### javaScript tag becomes js
 
-### add subfolder to bean definition
-class="helper.Aggregators.ArrayListAggregationStrategy" instead of: class="helper.ArrayListAggregationStrategy"
-class="helper.JSHelper.JSHelper" instead of: class="helper.JSHelper" 
+### aggregate
+- completionSize becomes a parameter
+- "strategyRef" parameter becomes "aggregationStrategy"
 
 ### Remove all calls to JSHelper
 replace helper(curtime,$format) with curtime.toString($format)
+
+### Remove all "request"
+"request" no longer exists in javascript code
 
 ### http4 becomes http
 
